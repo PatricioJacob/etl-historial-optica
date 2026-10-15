@@ -1,0 +1,8 @@
+﻿# correcciones_manuales.csv -- datos de ejemplo INVENTADOS
+#
+# Cada fila corrige una visita, identificada por su id_bloque.
+# Una celda vacía no pisa nada; una celda con valor manda.
+id_bloque,fecha,od_lejos_esf,doctor,observaciones
+333fb4e4b860,12/04/2024,,MIRADOR JOAQUIN,
+a9df5e074a63,,,,REVISADO: LA GRADUACION ANTERIOR ERA -2.25 Y -2.50
+ffffffffffff,,-1.00,,
