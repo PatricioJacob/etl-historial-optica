@@ -1,0 +1,23 @@
+# Salidas del ETL: se regeneran con `python correr_demo.py`.
+salida/
+*.db
+*.log
+
+# CSV: ninguno se versiona, salvo los datos de ejemplo, que son inventados.
+*.csv
+!datos_ejemplo/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Sistema operativo y editores
+Thumbs.db
+desktop.ini
+.DS_Store
+.idea/
+.vscode/
+~$*

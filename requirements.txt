@@ -1,0 +1,26 @@
+# Dependencias del ETL de la óptica
+#
+# Instalación:
+#     pip install -r requirements.txt
+#
+# CRITERIO: lo mínimo indispensable.
+#
+# Este script tiene que correr en la PC con Windows de la óptica sin que un
+# empleado tenga que resolver un problema de instalación. Por eso todo el
+# pipeline usa SOLO la biblioteca estándar de Python:
+#
+#     re          expresiones regulares
+#     csv         escritura de los CSV de salida
+#     sqlite3     base de datos consultable (viene con Python, no se instala)
+#     hashlib     cálculo del id_bloque
+#     unicodedata normalización de acentos
+#     logging     registro a consola y a archivo
+#     pathlib     rutas
+#     dataclasses estructuras de datos
+#
+# No hace falta pandas para correr el ETL. Se descartó a propósito: para este
+# archivo es contraproducente (read_csv destroza el campo NOTAS multilínea sin
+# comillas) y además es 60 MB de dependencia para una PC de mostrador.
+
+# --- Sólo para correr los tests --------------------------------------------
+pytest>=7.0
