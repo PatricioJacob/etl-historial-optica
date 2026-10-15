@@ -265,10 +265,11 @@ def registro_crudo(apellido: str, nombre: str, documento: str, cuerpo: list[str]
 
 
 def documento_inventado(r: random.Random) -> str:
-    """Documento ``0`` en la mayoría; si no, uno de 8 dígitos que empieza con 9.
+    """Documento ``0`` en la mayoría; si no, un número al azar de 8 dígitos.
 
-    Ningún DNI argentino emitido empieza con 9 y 8 dígitos, así que no puede
-    coincidir con una persona real.
+    Es inventado: sale de la semilla, no de ninguna persona. Antes de publicar
+    se verificó, fuera de este repositorio, que ninguno coincide con un
+    documento de la base de la óptica.
     """
     return "0" if r.random() < 0.87 else str(r.randint(90_000_000, 99_999_999))
 
