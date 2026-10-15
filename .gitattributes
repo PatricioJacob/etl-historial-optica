@@ -1,0 +1,3 @@
+# Los datos de ejemplo imitan el export de Moebius (cp1252, CRLF): se guardan
+# byte a byte, sin que git les cambie los saltos de línea.
+datos_ejemplo/*.csv -text
