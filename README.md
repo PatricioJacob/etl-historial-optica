@@ -101,7 +101,7 @@ Para correr el ETL sobre otro archivo: `python etl_optica.py --entrada otra.csv 
 ## Herramientas
 
 - **Python** (biblioteca estándar: `re`, `csv`, `sqlite3`, `hashlib`) y **SQLite**. Tests con `pytest`.
-- **Claude Code** como herramienta de desarrollo. Claude Code escribió y probó el código bajo nuestra dirección. Nosotros definimos las reglas de negocio con la óptica, revisamos cada cambio y tomamos las decisiones.
+- **Claude Code** como herramienta de asistencia en desarrollo. 
 
 ## Autores
 
